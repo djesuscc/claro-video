@@ -8,11 +8,10 @@ interface Props {
 }
 const baseOpts = {
   playerVars: {
-    autoplay: 0,
+    autoplay: 1,
     controls: 1,
   },
 };
-
 
 const getOptsForScreenSize = () => {
   if (typeof window === 'undefined') return {
