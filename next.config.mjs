@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   output: "export",
-  basePath: "/claro-video-maqueta"
+  images: { unoptimized: true }
 };
 
 export default nextConfig;

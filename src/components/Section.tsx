@@ -1,4 +1,9 @@
 'use client';
+import TeamLatam from '@/assets/images/team-latam.png';
+import TravelFashion from '@/assets/images/travel-meets-fashion.png';
+import Velocity from '@/assets/images/velocidad-riesgo.png';
+import Experience from '@/assets/images/experiencia.png'
+
 
 import {
   Carousel,
@@ -8,7 +13,6 @@ import {
 import { Video } from "@/interfaces/video";
 import { VideoCircle } from "./VideoCircle";
 import { VideoPlayer } from "./VideoPlayer";
-import { LIST_ITEMS } from '@/common/constants';
 import { useState } from "react";
 
 interface Props {
@@ -17,7 +21,28 @@ interface Props {
 
 export const Section = ({ title }: Props) => {
   const [videoId, setVideoId] = useState('rKmnuiDDnAo')
-  const listVideos: Video[] = LIST_ITEMS;
+  const listVideos: Video[] = [
+    {
+      id: 'fredVDoCUAU',
+      title: 'team latam',
+      img: TeamLatam
+    },
+    {
+      id: 'UomdFp8DNys',
+      title: 'travel meets fashion',
+      img: TravelFashion
+    },
+    {
+      id: 'X79TnHzPn2M',
+      title: 'velocidad y riesgo',
+      img: Velocity
+    },
+    {
+      id: 'oWdyldXwLRk',
+      title: 'experiencia multimedia',
+      img: Experience
+    }
+  ];
 
   return (
     <div className="w-full h-full flex flex-col items-center border-b border-gray-400">

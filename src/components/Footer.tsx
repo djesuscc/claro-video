@@ -2,12 +2,14 @@ import Image from "next/image";
 import Link from "next/link";
 import { FaFacebookF, FaTwitter } from "react-icons/fa";
 import { TiSocialYoutubeCircular } from "react-icons/ti";
+import MobileIcon from '@/assets/images/mobli-icon.png';
+import Logo from '@/assets/images/logo-sochi-color.png';
 
 export const Footer = () => {
   const socialMedias = [
     {
       link: '',
-      icon: <Image src={'../../public/assets/images/mobli-icon.png'} alt={'mobile'} width={13} height={13} />,
+      icon: <Image src={MobileIcon} alt={'mobile'} width={13} height={13} />,
       bg: '#93c5fd'
     },
     {
@@ -34,7 +36,7 @@ export const Footer = () => {
         </span>
       </div>
       <div className="flex-1 flex justify-center">
-        <Image src={'../../public/assets/images/logo-sochi.png'} alt="Logo" width={100} height={100} />
+        <Image src={Logo} alt="Logo" width={100} height={100} />
       </div>
       <div className="flex-1 flex justify-center">
         <ul className="flex gap-2">
