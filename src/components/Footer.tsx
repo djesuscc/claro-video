@@ -7,7 +7,7 @@ export const Footer = () => {
   const socialMedias = [
     {
       link: '',
-      icon: <Image src={'/assets/images/mobli-icon.png'} alt={'mobile'} width={13} height={13} />,
+      icon: <Image src={'./assets/images/mobli-icon.png'} alt={'mobile'} width={13} height={13} />,
       bg: '#93c5fd'
     },
     {
@@ -34,7 +34,7 @@ export const Footer = () => {
         </span>
       </div>
       <div className="flex-1 flex justify-center">
-        <Image src={'/assets/images/logo-sochi.png'} alt="Logo" width={100} height={100} />
+        <Image src={'./assets/images/logo-sochi.png'} alt="Logo" width={100} height={100} />
       </div>
       <div className="flex-1 flex justify-center">
         <ul className="flex gap-2">
